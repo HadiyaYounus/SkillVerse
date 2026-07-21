@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 
-import MainLayout from "../layouts/MainLayout";
+import MainLayout from "./MainLayout";
 
 import Home from "../pages/Home";
-import Skills from "../pages/skills";
+import Skills from "../pages/Skills";
 
 function AppRouter() {
   return (
