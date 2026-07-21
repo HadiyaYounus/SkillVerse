@@ -1,0 +1,48 @@
+const skills = [
+  {
+    id: 1,
+    image: "⚛️",
+    title: "React",
+    description: "Build modern user interfaces with reusable components.",
+    level: "Intermediate",
+    category: "Frontend",
+    duration: "8 Weeks",
+    students: "12,500",
+    price: "Free",
+  },
+  {
+    id: 2,
+    image: "🟨",
+    title: "JavaScript",
+    description: "Master the language of the web with modern JavaScript.",
+    level: "Beginner",
+    category: "Programming",
+    duration: "6 Weeks",
+    students: "18,000",
+    price: "Free",
+  },
+  {
+    id: 3,
+    image: "🐍",
+    title: "Python",
+    description: "Learn Python for automation, web development, and AI.",
+    level: "Beginner",
+    category: "Programming",
+    duration: "10 Weeks",
+    students: "25,000",
+    price: "Free",
+  },
+  {
+    id: 4,
+    image: "🟢",
+    title: "Node.js",
+    description: "Build scalable backend applications using Node.js and Express.",
+    level: "Intermediate",
+    category: "Backend",
+    duration: "9 Weeks",
+    students: "9,500",
+    price: "Free",
+  },
+];
+
+export default skills;

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "React",
+    "description": "Build modern user interfaces using React.",
+    "level": "Intermediate",
+    "duration": "8 Weeks",
+    "image": "⚛️"
+  },
+  {
+    "id": 2,
+    "title": "JavaScript",
+    "description": "Learn modern JavaScript from basics to advanced.",
+    "level": "Beginner",
+    "duration": "6 Weeks",
+    "image": "🟨"
+  },
+  {
+    "id": 3,
+    "title": "Python",
+    "description": "Master Python programming for real-world applications.",
+    "level": "Intermediate",
+    "duration": "10 Weeks",
+    "image": "🐍"
+  },
+  {
+    "id": 4,
+    "title": "Node.js",
+    "description": "Create backend applications with Node.js and Express.",
+    "level": "Intermediate",
+    "duration": "7 Weeks",
+    "image": "🟢"
+  }
+]
