@@ -17,5 +17,5 @@ export default function handler(req, res) {
     });
   }
 
-  res.status(200).json(skill);
+  return res.status(200).json(skill);
 }
