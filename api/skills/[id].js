@@ -1,6 +1,6 @@
-const skills = require("../../server/data/skills.json");
+import skills from "../../server/data/skills.json";
 
-module.exports = (req, res) => {
+export default function handler(req, res) {
   const { id } = req.query;
 
   const skill = skills.find((item) => item.id === Number(id));
@@ -11,5 +11,5 @@ module.exports = (req, res) => {
     });
   }
 
-  res.status(200).json(skill);
-};
+  return res.status(200).json(skill);
+}
