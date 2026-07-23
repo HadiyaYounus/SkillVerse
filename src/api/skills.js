@@ -1,9 +1,5 @@
-const skills = require("../server/data/skills.json");
+import skills from "./data/skills.json";
 
-module.exports = (req, res) => {
-  if (req.method !== "GET") {
-    return res.status(405).json({ message: "Method Not Allowed" });
-  }
-
+export default function handler(req, res) {
   res.status(200).json(skills);
-};
+}
