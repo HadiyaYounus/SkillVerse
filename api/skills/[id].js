@@ -1,4 +1,4 @@
-import skills from "../../server/data/skills.json";
+import skills from "../../server/data/skills.json" with { type: "json" };
 
 export default function handler(req, res) {
   const { id } = req.query;
