@@ -1,9 +1,15 @@
-import skills from "../../server/data/skills.json" with { type: "json" };
+import skills from "../data/skills.json";
 
 export default function handler(req, res) {
-  const { id } = req.query;
+  if (req.method !== "GET") {
+    return res.status(405).json({
+      message: "Method Not Allowed",
+    });
+  }
 
-  const skill = skills.find((item) => item.id === Number(id));
+  const id = Number(req.query.id);
+
+  const skill = skills.find((item) => item.id === id);
 
   if (!skill) {
     return res.status(404).json({
@@ -11,5 +17,5 @@ export default function handler(req, res) {
     });
   }
 
-  return res.status(200).json(skill);
+  res.status(200).json(skill);
 }
