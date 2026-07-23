@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import API from "../api/api";
-import SkillCard from "../components/SkillCard";
+import SkillCard from "../components/SkillCard/SkillCard";
 
 function Skills() {
   const [skills, setSkills] = useState([]);
