@@ -1,9 +1,7 @@
-const skills = require("../server/data/skills.json");
+import axios from "axios";
 
-module.exports = (req, res) => {
-  if (req.method !== "GET") {
-    return res.status(405).json({ message: "Method Not Allowed" });
-  }
+const API = axios.create({
+  baseURL: import.meta.env.VITE_API_URL || "/api",
+});
 
-  res.status(200).json(skills);
-};
+export default API;
